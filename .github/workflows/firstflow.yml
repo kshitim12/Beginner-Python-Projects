@@ -18,9 +18,9 @@ jobs:
           # Add your custom script or commands here
           echo "This workflow runs on any commit."
       - name: Setup CodeQL
-        uses: github/codeql-action/setup@v2
+        uses: github/codeql-action/init@v2
         with:
-          languages: all
+          languages: python
 
       - name: Initialize CodeQL Analysis
         run: |
