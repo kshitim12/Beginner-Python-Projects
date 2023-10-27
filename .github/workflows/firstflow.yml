@@ -1,9 +1,9 @@
-name: Push Request Workflow
+name: Any Commit Workflow
 
 on:
   push:
     branches:
-      - main
+      - '*'
 
 jobs:
   build:
@@ -13,8 +13,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
 
-      - name: Build and Test
+      - name: Run My Custom Script
         run: |
-          # Add your build and test commands here
-          echo "Building and testing..."
-
+          # Add your custom script or commands here
+          echo "This workflow runs on any commit."
