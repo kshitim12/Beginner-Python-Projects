@@ -24,7 +24,7 @@ jobs:
 
       - name: Initialize CodeQL Analysis
         run: |
-          codeql database init my-database --language=python
+          codeql database init my-database --language= python
           codeql database finalize my-database
         working-directory: ${{github.workspace}}
 
