@@ -18,7 +18,9 @@ def alarm(set_alarm_timer):
         print(now)
         if now == set_alarm_timer:
             print("Time to Wake up")
-            print("Its Awesome !! you woke Up"")
+            print("Its Awesome !! you woke Up")
+            print("Kshitij Mishra !! Wake Up")
+                  
 
             play = 0
             while play != 10:  # This will ring alarm for 10 seconds
